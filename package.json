@@ -1,0 +1,26 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "cleanup": "rm -rf css/build/*",
+
+    "preproduction": "npm run cleanup",
+    "production": "sass css/scss/style.scss css/build/style.css --style=compressed --sourcemap=none",
+
+    "predevelopment": "npm run cleanup",
+    "development": "sass --watch css/scss:css/build --style=expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GEEKIAM/button.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GEEKIAM/button/issues"
+  },
+  "homepage": "https://github.com/GEEKIAM/button#readme"
+}
